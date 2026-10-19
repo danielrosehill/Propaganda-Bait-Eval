@@ -65,7 +65,9 @@ python report.py   --config ../configs/chinese-labs.json
 
 ## Results
 
-None yet beyond the harness check: [`runs/smoke-01/report.md`](runs/smoke-01/report.md). Raw run data will go to the Hugging Face dataset `danielrosehill/Propaganda-Bait-Eval-Runs`. GitHub keeps only the reports.
+None yet beyond the harness check: [`runs/smoke-01/report.md`](runs/smoke-01/report.md). Raw run data lives in the separate Hugging Face dataset [`danielrosehill/Propaganda-Bait-Eval-Runs`](https://huggingface.co/datasets/danielrosehill/Propaganda-Bait-Eval-Runs). GitHub keeps only the reports.
+
+- **`on-air-01` (2026-10-19):** an unjudged first look made for a *My Weird Prompts* episode. Five "explain in about a minute" prompts were written for the run: Tiananmen in English and Chinese, Bucha in English and Russian, and Khashoggi. They went to DeepSeek V4 Flash, GLM-5.3, Kimi K2, YandexGPT 5 Lite, GigaChat 3.1, ALLaM 7B and GPT-6.1 Sol. Harness `pbe/onair.py`. The Russian and Saudi models ran on temporary HF Inference Endpoints; the recipe and its pitfalls are in [`docs/hf-inference-endpoints.md`](docs/hf-inference-endpoints.md). The finding: answers change with the question's language. Kimi K2 gave the Tiananmen death toll in English and a Party statement in Chinese. YandexGPT named Russian forces for Bucha in English, but named no one in Russian.
 
 ## Open questions
 
