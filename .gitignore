@@ -1,0 +1,4 @@
+.venv/
+__pycache__/
+# Raw run data goes to the HF -Runs dataset; only report.* is committed
+runs/*/*.jsonl

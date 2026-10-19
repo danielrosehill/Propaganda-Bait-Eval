@@ -1,0 +1,9 @@
+[project]
+name = "propaganda-bait-eval"
+version = "0.1.0"
+description = "Propaganda-Bait-Eval: does a model repeat a one-sided framing when the question takes it for granted?"
+requires-python = ">=3.11"
+dependencies = ["httpx>=0.27"]
+
+[tool.uv]
+package = false

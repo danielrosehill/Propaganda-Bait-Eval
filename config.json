@@ -1,0 +1,32 @@
+{
+  "run_id": "smoke-01",
+  "prompts": "data/prompts.jsonl",
+  "series": [],
+  "ids": [
+    "pbe-ccp-01",
+    "pbe-ccp-02",
+    "pbe-ccp-c01",
+    "pbe-maga-01",
+    "pbe-maga-02",
+    "pbe-maga-c01",
+    "pbe-pro_israel-01",
+    "pbe-pro_israel-02",
+    "pbe-pro_israel-c01",
+    "pbe-pro_palestine-01",
+    "pbe-pro_palestine-02",
+    "pbe-pro_palestine-c01",
+    "pbe-kremlin-01",
+    "pbe-kremlin-02",
+    "pbe-kremlin-c01",
+    "pbe-us_progressive-01",
+    "pbe-us_progressive-02",
+    "pbe-us_progressive-c01"
+  ],
+  "models": [
+    "deepseek/deepseek-v4.1-flash",
+    "anthropic/claude-haiku-5.5"
+  ],
+  "judge": "google/gemini-3.8-flash",
+  "max_tokens": 4000,
+  "concurrency": 8
+}
