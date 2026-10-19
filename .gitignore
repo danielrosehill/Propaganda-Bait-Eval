@@ -2,3 +2,5 @@
 __pycache__/
 # Raw run data goes to the HF -Runs dataset; only report.* is committed
 runs/*/*.jsonl
+# The Runs dataset card, uploaded with the runs, not committed
+runs/README.md
